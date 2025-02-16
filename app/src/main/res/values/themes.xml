@@ -3,7 +3,12 @@
     <style name="Base.Theme.Reserver" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/dark_blue</item>
     </style>
 
-    <style name="Theme.Reserver" parent="Base.Theme.Reserver" />
+    <style name="Theme.Reserver" parent="Base.Theme.Reserver">
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+    </style>
 </resources>
