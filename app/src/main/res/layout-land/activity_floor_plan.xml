@@ -60,12 +60,12 @@
         <ImageView
             android:id="@+id/chair_1"
             android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_height="47dp"
             app:srcCompat="@drawable/round_faded" />
         <ImageView
             android:id="@+id/chair_2"
             android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_height="47dp"
             android:layout_marginTop="25dp"
             app:srcCompat="@drawable/round_faded" />
 
@@ -84,7 +84,7 @@
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_height="47dp"
             android:layout_marginBottom="20dp"
             android:rotation="90"
             app:srcCompat="@drawable/rectangle_faded" />

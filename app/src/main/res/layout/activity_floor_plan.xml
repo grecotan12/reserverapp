@@ -49,7 +49,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/chair_one"
+        android:id="@+id/table_one"
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -126,6 +126,7 @@
             app:srcCompat="@drawable/round_faded"/>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/table_three"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
