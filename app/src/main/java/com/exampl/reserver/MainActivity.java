@@ -77,9 +77,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void giveInput(View view) {
-        Intent intent = new Intent(this, FloorPlan.class);
-        intent.putExtra(FloorPlan.USER_INPUT, mUserInput.getText().toString());
-        mInputLauncher.launch(intent);
+        if (Integer.parseInt(mUserInput.getText().toString()) > 0) {
+            Intent intent = new Intent(this, FloorPlan.class);
+            intent.putExtra(FloorPlan.USER_INPUT, mUserInput.getText().toString());
+            mInputLauncher.launch(intent);
+        }
     }
 
     private final ActivityResultLauncher<Intent> mInputLauncher = registerForActivityResult(

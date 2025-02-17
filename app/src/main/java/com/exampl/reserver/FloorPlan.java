@@ -3,6 +3,7 @@ package com.exampl.reserver;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -44,17 +45,26 @@ public class FloorPlan extends AppCompatActivity {
 
         if (!theInput.equals("")) {
             int guests = Integer.parseInt(theInput);
-            if (guests > 4) {
-                for (int i = 0; i < table_one.getChildCount(); i++) {
-                    View view = table_one.getChildAt(i);
-
-                    if (view instanceof ImageView) {
-                        ((ImageView) view).setImageResource(R.drawable.round_solid);
-                    }
-                }
+            if (guests <= 4) {
+                this.setImageEachLayout(table_one, R.drawable.round_solid);
+                this.setImageEachLayout(table_two, R.drawable.round_solid);
+                this.setImageEachLayout(table_three, R.drawable.round_solid);
+            } else {
+                this.setImageEachLayout(table_one, R.drawable.round_faded);
+                this.setImageEachLayout(table_two, R.drawable.round_faded);
+                this.setImageEachLayout(table_three, R.drawable.round_faded);
             }
         }
 
+    }
+
+    private void setImageEachLayout(LinearLayout theLayOut, int theDrawable) {
+        for (int i = 0; i < theLayOut.getChildCount(); i++) {
+            View view = theLayOut.getChildAt(i);
+            if (view instanceof ImageView) {
+                ((ImageView) view).setImageResource(theDrawable);
+            }
+        }
     }
 
 }
