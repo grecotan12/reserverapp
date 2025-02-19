@@ -6,10 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="100dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -22,18 +18,6 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/submit_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/submit"
-        android:backgroundTint="@color/purple"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intro"
-        android:layout_marginTop="20dp"
-        android:onClick="giveInput"/>
-
     <ImageView
         android:id="@+id/waiter_image"
         android:layout_width="wrap_content"
@@ -42,7 +26,7 @@
         app:srcCompat="@drawable/waiter"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/submit_button"
+        app:layout_constraintTop_toBottomOf="@+id/intro"
         android:layout_marginTop="20dp"/>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -84,5 +68,14 @@
         app:layout_constraintTop_toBottomOf="@+id/group_input"
         style="@style/warning"
         android:layout_marginStart="30dp" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:name="com.exampl.reserver.DayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/warning_msg" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

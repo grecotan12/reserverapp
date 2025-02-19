@@ -4,4 +4,25 @@
     <string name="waiter_image">waiter image</string>
     <string name="submit">Submit</string>
     <string name="ask_input">How many seats are you requesting?</string>
+    <string name="info">Info</string>
+    <string name="enter_the_number_of_reservation_then_hit_submit">Enter the number of reservation then hit submit</string>
+    <string name="app_make_by_tan_to_make_reservation">App make by Tan to make reservation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="sun">SUN</string>
+    <string name="day">Day</string>
+    <string name="_4_00_pm">4:00 PM</string>
+    <string name="_4_30_pm">4:30 PM</string>
+    <string name="_5_00_pm">5:00 PM</string>
+    <string name="_5_30_pm">5:30 PM</string>
+    <string name="_6_00_pm">6:00 PM</string>
+    <string name="_6_30_pm">6:30 PM</string>
+    <string name="_7_00_pm">7:00 PM</string>
+    <string name="_7_30_pm">7:30 PM</string>
+    <string name="confirm">Confirm</string>
+    <string name="confirm_selection">Confirm the selection</string>
+    <string name="yes">OK</string>
+    <string name="no">CANCEL</string>
 </resources>

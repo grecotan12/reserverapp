@@ -2,20 +2,17 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
+    android:id="@+id/floor_plan"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     tools:context=".FloorPlan">
 
-
     <ImageView
-        android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        app:srcCompat="@drawable/overhead"
-        android:adjustViewBounds="true"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/overhead" />
 
     <LinearLayout
         android:id="@+id/window_one"
@@ -23,10 +20,10 @@
         android:layout_height="wrap_content"
         android:paddingTop="25dp"
         android:orientation="horizontal"
-        android:layout_marginEnd="200dp"
+        android:layout_marginStart="80dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintLeft_toLeftOf="parent">
+
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="75dp"
@@ -49,12 +46,12 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/chair_one"
+        android:id="@+id/table_one"
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="45dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/window_one">
         <ImageView
@@ -76,10 +73,11 @@
         android:id="@+id/window_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="125dp"
+        android:layout_marginTop="100dp"
         android:orientation="vertical"
-        android:layout_marginRight="260dp"
+        android:layout_marginStart="260dp"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
         <ImageView
             android:id="@+id/imageView5"
@@ -112,11 +110,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="225dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="120dp"
         app:layout_constraintTop_toBottomOf="@+id/window_one"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintLeft_toLeftOf="parent">
         <ImageView
             android:layout_width="75dp"
             android:layout_height="47dp"
@@ -127,14 +124,14 @@
             app:srcCompat="@drawable/round_faded"/>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/table_three"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="225dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="120dp"
         app:layout_constraintTop_toBottomOf="@+id/table_two"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintLeft_toLeftOf="parent">
         <ImageView
             android:layout_width="75dp"
             android:layout_height="47dp"

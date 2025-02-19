@@ -13,8 +13,17 @@
         android:theme="@style/Theme.Reserver"
         tools:targetApi="31">
         <activity
+            android:name=".Help"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".About"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".FloorPlan"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

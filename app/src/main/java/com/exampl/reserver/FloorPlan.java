@@ -34,8 +34,13 @@ public class FloorPlan extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_floor_plan);
-
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.floor_plan), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
         table_one = findViewById(R.id.table_one);
         table_two = findViewById(R.id.table_two);
         table_three = findViewById(R.id.table_three);
